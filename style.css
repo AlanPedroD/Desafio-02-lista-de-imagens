@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 335px;
+    height: 431px;
+    padding: 5px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h1, p{
+    text-align: center;
+}
+
+li{
+    list-style: none;
+}
+
+@media (max-width: 361px){
+    img{
+        width: 225px;
+        height: 321px;
+    }
+}
+
+@media (max-width: 251px){
+    img{
+        width: 175px;
+        height: 271px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
