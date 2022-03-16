@@ -8,16 +8,24 @@ img{
     padding: 5px;
 }
 
-.flex{
+/* .flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.conteudo{
+    position: absolute;
+}
+
+.imagens{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+
 }
 
-h1, p{
-    text-align: center;
-}
 
 li{
     list-style: none;
@@ -36,6 +44,7 @@ li{
         height: 271px;
     }
 }
+
 
 
 
