@@ -8,24 +8,34 @@ img{
     padding: 5px;
 }
 
-/* .flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
-.conteudo{
-    position: absolute;
-}
-
-.imagens{
+.container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-
 }
 
+.area-conteudo{
+    position: relative;
+}
+
+.conteudo{
+    position: absolute;
+    bottom: 44px;
+    top: 332px;
+    
+    left: 23px;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+
+
+p{
+    font-size: 17px;
+    font-weight: 300,lighter;
+}
 
 li{
     list-style: none;
@@ -36,12 +46,19 @@ li{
         width: 225px;
         height: 321px;
     }
+    .area-conteudo{
+        position: relative;
+    }
 }
 
 @media (max-width: 251px){
     img{
         width: 175px;
         height: 271px;
+    }
+
+    .area-conteudo{
+        position: relative;
     }
 }
 
