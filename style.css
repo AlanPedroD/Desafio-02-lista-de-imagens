@@ -1,62 +1,69 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Dongle:wght@700&family=Fira+Code:wght@300;400;500;600;700&family=Lobster+Two:ital,wght@1,400;1,700&family=Oswald:wght@500&family=Playfair+Display:ital,wght@1,500&family=Public+Sans:wght@400;700&family=Source+Sans+Pro:wght@700&family=Source+Serif+Pro:ital,wght@0,300;0,400;1,600&display=swap');
-
-img{
-    width: 335px;
-    height: 431px;
-    padding: 5px;
-}
-
-.container{
+main{
     display: flex;
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    margin: 50px;
-    padding: 50px;
+}
+    
+
+html{
+    font-family: 'Public Sans', sans-serif;
 }
 
-.area-conteudo{
+.pinturas .pintura img{
+    width: 335px;
+    height: 431px;
+    width: 100%;
+    /* Não vi você colocar um tamanho nas imagens */
+}
+
+.pinturas{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.pinturas .pintura{
+    width: 335px;
+    height: 431px;
     position: relative;
 }
 
-.conteudo{
+.pinturas .pintura .informacoes{
     position: absolute;
-    bottom: 44px;
-    left: 23px;
-    font-family: 'Public Sans', sans-serif;
+   
     color: white;
+    bottom: 40px;
+    left: 20px;
 }
-
-h1{
+.pinturas .pintura .informacoes h2{
     font-size: 30px;
-    font-weight: 700,bold;
+    margin-bottom: 8px;
 }
-p{
+.pinturas .pintura .informacoes h3{
     font-size: 17px;
-    font-weight: 400,regular;
+    font-weight: 300;
 }
 
-li{
-    list-style: none;
-}
 
-@media (max-width: 361px){
-    img{
-        width: 225px;
-        height: 321px;
+@media (max-width: 1400px){
+    .pinturas{
+        max-width: 900px;
+        margin: 30px 0;
     }
 }
 
-@media (max-width: 251px){
-    img{
-        width: 175px;
-        height: 271px;
-    }
+
+
+
+
+
 
   
 
